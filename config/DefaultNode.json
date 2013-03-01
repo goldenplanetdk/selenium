@@ -27,7 +27,7 @@
 		"register": true,
 		"registerCycle": 5000,
 		"hubPort": 4444,
-		"hubHost": "localhost"
+		"hubHost": "kievtomcat.kievlan.local"
 
 	}
 }
