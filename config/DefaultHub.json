@@ -1,5 +1,5 @@
 {
-	"host": null,
+	"host": "kievtomcat.kievlan.local",
 	"port": 4444,
 	"newSessionWaitTimeout": -1,
 	"servlets" : [],
