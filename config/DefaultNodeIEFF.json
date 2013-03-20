@@ -7,11 +7,6 @@
 				"seleniumProtocol": "WebDriver"
 			},
 			{
-				"browserName": "chrome",
-				"maxInstances": 1,
-				"seleniumProtocol": "WebDriver"
-			},
-			{
 				"platform": "WINDOWS",
 				"browserName": "ie",
 				"maxInstances": 1,
@@ -28,6 +23,5 @@
 		"hubPort": 4444,
 		"hubHost": "kievtomcat.kievlan.local",
 		"cleanUpCycle":2000
-
 	}
 }
