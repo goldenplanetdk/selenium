@@ -8,13 +8,13 @@
 			},
 			{
 				"browserName": "chrome",
-				"maxInstances": 1,
+				"maxInstances": 2,
 				"seleniumProtocol": "WebDriver"
 			},
 			{
 				"platform": "WINDOWS",
 				"browserName": "ie",
-				"maxInstances": 1,
+				"maxInstances": 2,
 				"seleniumProtocol": "WebDriver"
 			}
 		],
