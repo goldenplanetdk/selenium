@@ -1,5 +1,5 @@
 {
-	"host": "kievtomcat.kievlan.local",
+	"host": "ci.openbizbox.com",
 	"port": 4444,
 	"newSessionWaitTimeout": -1,
 	"servlets" : [],

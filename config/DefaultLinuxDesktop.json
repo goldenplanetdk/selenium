@@ -20,7 +20,7 @@
 		"register": true,
 		"registerCycle": 10000,
 		"hubPort": 4444,
-		"hubHost": "kievtomcat.kievlan.local",
+		"hubHost": "ci.openbizbox.com",
 		"cleanUpCycle":2000
 
 	}
