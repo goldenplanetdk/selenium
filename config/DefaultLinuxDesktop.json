@@ -18,7 +18,7 @@
 		"maxSession": 4,
 		"port": 5555,
 		"register": true,
-		"registerCycle": 10000,
+		"registerCycle": 60000,
 		"hubPort": 4444,
 		"hubHost": "ci.openbizbox.com",
 		"cleanUpCycle":2000
