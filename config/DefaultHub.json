@@ -7,9 +7,8 @@
 	"capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
 	"throwOnCapabilityNotPresent": true,
 	"nodePolling": 10000,
-
-	"cleanUpCycle": 60000,
-	"timeout": 300000,
-	"browserTimeout": 0,
+	"cleanUpCycle": 5000,
+	"timeout": 30,
+	"browserTimeout": 60,
 	"maxSession": 5
 }
