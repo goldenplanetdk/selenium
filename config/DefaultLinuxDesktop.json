@@ -2,15 +2,15 @@
 	"capabilities":
 		[
 			{
-				"browserName": "chrome",
-				"maxInstances": 16,
+				"browserName": "firefox",
+				"maxInstances": 18,
 				"seleniumProtocol": "WebDriver"
 			}
 		],
 	"configuration":
 	{
 		"proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
-		"maxSession": 16,
+		"maxSession": 18,
 		"port": 5555,
 		"register": true,
 		"registerCycle": 5000,

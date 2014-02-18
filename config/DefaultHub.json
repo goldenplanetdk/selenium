@@ -9,5 +9,5 @@
 	"nodePolling": 10000,
 	"cleanUpCycle": 5000,
 	"timeout": 30000,
-	"maxSession": 16
+	"maxSession": 18
 }
