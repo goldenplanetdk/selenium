@@ -1,5 +1,4 @@
 {
-  "host": "148.251.217.212",
   "port": 4444,
   "newSessionWaitTimeout": -1,
   "servlets" : [],
