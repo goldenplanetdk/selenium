@@ -1,21 +1,26 @@
 {
-	"capabilities":
-		[
-			{
-				"browserName": "chrome",
-				"maxInstances": 16,
-				"seleniumProtocol": "WebDriver"
-			}
-		],
-	"configuration":
+  "capabilities":
+  [
 	{
-		"proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
-		"maxSession": 16,
-		"port": 5555,
-		"register": true,
-		"registerCycle": 5000,
-		"hubPort": 4444,
-		"hubHost": "ci.openbizbox.com",
-		"cleanUpCycle":2000
+	  "browserName": "firefox",
+	  "maxInstances": 8,
+	  "seleniumProtocol": "WebDriver"
+	},
+	{
+	  "browserName": "chrome",
+	  "maxInstances": 17,
+	  "seleniumProtocol": "WebDriver"
 	}
+  ],
+  "configuration":
+  {
+	"proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+	"maxSession": 17,
+	"port": 5555,
+	"register": true,
+	"registerCycle": 5000,
+	"hubPort": 4444,
+	"hubHost": "148.251.217.212",
+	"cleanUpCycle":2000
+  }
 }

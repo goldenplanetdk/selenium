@@ -1,13 +1,13 @@
 {
-	"host": "ci.openbizbox.com",
-	"port": 4444,
-	"newSessionWaitTimeout": -1,
-	"servlets" : [],
-	"prioritizer": null,
-	"capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
-	"throwOnCapabilityNotPresent": true,
-	"nodePolling": 10000,
-	"cleanUpCycle": 5000,
-	"timeout": 30000,
-	"maxSession": 16
+  "host": "148.251.217.212",
+  "port": 4444,
+  "newSessionWaitTimeout": -1,
+  "servlets" : [],
+  "prioritizer": null,
+  "capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
+  "throwOnCapabilityNotPresent": true,
+  "nodePolling": 10000,
+  "cleanUpCycle": 5000,
+  "timeout": 30000,
+  "maxSession": 18
 }
