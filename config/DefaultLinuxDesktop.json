@@ -20,7 +20,7 @@
 	"register": true,
 	"registerCycle": 5000,
 	"hubPort": 4444,
-	"hubHost": "148.251.217.212",
+	"hubHost": "127.0.0.1",
 	"cleanUpCycle":2000
   }
 }
