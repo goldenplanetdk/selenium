@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SELENIUM="java -jar selenium-server-standalone.jar"
+SELENIUM="java -jar selenium-server-standalone-2.45.0.jar"
 if [ "$1" == "" ];
 then
 	echo "Usage:"
