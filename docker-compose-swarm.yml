@@ -1,0 +1,52 @@
+version: '3'
+
+services:
+
+    nginx:
+      image: registry.gitlab.com/goldenplanet/selenium/nginx-reverse-proxy
+      networks:
+        - backend
+        - traefik-net
+      deploy:
+        mode: replicated
+        placement:
+          constraints:
+            - node.labels.node_type==selenium-node
+        labels:
+          - "traefik.port=80"
+          - "traefik.docker.network=traefik-net"
+          - "traefik.frontend.rule=Host:qadesktop2.gpserver.dk"
+
+    hub:
+      image: selenium/hub:3.4.0-einsteinium
+      networks:
+        - backend
+      deploy:
+        mode: replicated
+        placement:
+          constraints:
+            - node.labels.node_type==selenium-node
+
+    ff-node:
+      image: selenium/node-firefox:3.4.0-einsteinium
+      networks:
+        - backend
+      depends_on:
+        - hub
+      deploy:
+        placement:
+          constraints:
+            - node.labels.node_type==selenium-node
+        mode: replicated
+        replicas: 2
+      environment:
+        - NODE_MAX_SESSION=12
+        - NODE_MAX_INSTANCES=12
+        - HUB_PORT_4444_TCP_ADDR=hub
+        - HUB_PORT_4444_TCP_PORT=4444
+      command: bash -c 'SE_OPTS="-host $$HOSTNAME" /opt/bin/entry_point.sh'
+
+networks:
+  backend:
+  traefik-net:
+    external: true
